@@ -1,0 +1,47 @@
+/* ****************************** HEADER STYLES ***************************** */
+
+.header-sec {
+  @include flexy($fdir: column);
+
+  h2 {
+    display: none;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 300;
+
+    margin-bottom: 10px;
+
+    text-align: $t-align;
+  }
+}
+
+.firebase-sec {
+  @include flexy($dsp: null, $a-self: center);
+}
+
+.header-sec {
+  @media #{$break-m} {
+    flex-direction: row;
+    h2 {
+      font-size: 3em;
+
+      letter-spacing: 0.15em;
+
+      text-shadow: 3px 4px #bbb;
+
+      display: initial;
+    }
+    p {
+      text-align: initial;
+    }
+    .firebase-intro {
+      align-self: center;
+    }
+
+    .firebase-sec {
+      flex-basis: 50%;
+    }
+  }
+}

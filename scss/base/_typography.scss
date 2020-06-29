@@ -1,0 +1,23 @@
+/* ******************************* BASE STYLES ****************************** */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+
+  color: #51575b;
+}
+
+.wrapper {
+  @include center();
+  @media #{$break-l} {
+    max-width: 1140px;
+  }
+}
+
+img {
+  max-width: 100%;
+}

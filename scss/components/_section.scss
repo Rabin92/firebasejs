@@ -1,0 +1,61 @@
+/* ***************************** SECTION STYLES ***************************** */
+
+section {
+  padding-bottom: 40px;
+
+  color: $white;
+  border-top: 4px solid $primary-color;
+  background: #4a463f;
+
+  span {
+    font-weight: bolder;
+
+    color: $primary-color;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 100;
+
+    margin: 40px 0 30px 0;
+
+    text-align: $t-align;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
+
+.col {
+  padding: 20px;
+
+  h3 {
+    color: $primary-color;
+  }
+
+  svg {
+    float: left;
+
+    height: 20px;
+    margin-right: 10px;
+
+    color: $white;
+  }
+}
+
+.sec-p {
+  font-weight: 200;
+
+  margin-left: 35px;
+}
+
+.container {
+  @media #{$break-l} {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    .col {
+      flex-basis: 33.333%;
+    }
+  }
+}

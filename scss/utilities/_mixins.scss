@@ -1,0 +1,37 @@
+@mixin center() {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@mixin flexy($dsp: flex, $fdir: null, $align: null, $a-self: null) {
+  display: $dsp;
+  flex-direction: $fdir;
+  align-items: $align;
+  align-self: $a-self;
+}
+
+@mixin size($w: null, $h: null) {
+  width: $w;
+  height: $h;
+}
+
+@mixin button {
+  font-weight: 100;
+
+  padding: 10px;
+
+  cursor: pointer;
+  letter-spacing: 0.15em;
+
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  background: #3dafbe;
+  box-shadow: 0 3px 4px #666;
+}
+
+@mixin aTags {
+  align-self: center;
+
+  padding-right: 10px;
+}

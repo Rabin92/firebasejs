@@ -1,0 +1,101 @@
+/* *********************************** NAV STYLES ********************************** */
+.main-nav {
+  @include flexy($fdir: column, $align: center);
+
+  margin-top: 10px;
+
+  h2 {
+    font-size: 3em;
+  }
+
+  @media #{$break-m} {
+    flex-direction: row;
+    justify-content: space-between;
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.nav-links {
+  li {
+    display: inline-block;
+  }
+
+  a {
+    @include aTags;
+
+    color: $nav-color;
+    &:hover {
+      color: darken($nav-color, 20%);
+    }
+  }
+}
+
+.star {
+  display: inline-block;
+
+  &-icon {
+    @include size($w: 15px, $h: 15px);
+
+    color: $star-icon-color;
+  }
+}
+
+.social {
+  a {
+    @include aTags;
+  }
+
+  &-icon {
+    @include size($w: 25px, $h: 25px);
+    margin-bottom: 30px;
+
+    opacity: 0.3;
+
+    @media #{$break-m} {
+      margin-bottom: initial;
+    }
+
+    &:hover {
+      transition: opacity 1s 0.1s ease-in-out;
+
+      opacity: 1;
+    }
+  }
+}
+
+input[type="button"] {
+  @include button;
+  @include flexy($dsp: null, $a-self: center);
+
+  &.btn-1 {
+    display: none;
+
+    @media #{$break-m} {
+      display: initial;
+    }
+  }
+
+  &.btn-2 {
+    width: 100%;
+    padding: 15px;
+
+    @media #{$break-m} {
+      width: 30%;
+      max-width: 150px;
+    }
+  }
+}
+
+.box-space {
+  margin-bottom: 10px;
+
+  text-align: $t-align;
+
+  @media #{$break-m} {
+    margin-bottom: 0;
+
+    text-align: initial;
+  }
+}
