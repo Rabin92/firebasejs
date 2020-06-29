@@ -468,8 +468,10 @@ input[type=button] {
   box-shadow: 0 3px 4px #666;
   align-self: center;
 }
-input[type=button]:hover {
-  transform: scale(1.1);
+@media (min-width: 48em) {
+  input[type=button]:hover {
+    transform: scale(1.1);
+  }
 }
 input[type=button].btn-1 {
   display: none;

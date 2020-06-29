@@ -69,8 +69,10 @@ input[type="button"] {
   @include button;
   @include flexy($dsp: null, $a-self: center);
 
-  &:hover {
-    transform: scale(1.1);
+  @media #{$break-m} {
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &.btn-1 {
