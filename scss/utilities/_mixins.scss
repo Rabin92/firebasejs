@@ -3,11 +3,20 @@
   margin: 0 auto;
 }
 
-@mixin flexy($dsp: flex, $fdir: null, $align: null, $a-self: null) {
+@mixin flexy(
+  $dsp: flex,
+  $fdir: null,
+  $align: null,
+  $a-self: null,
+  $justify-c: null,
+  $f-wrap: null
+) {
   display: $dsp;
   flex-direction: $fdir;
   align-items: $align;
   align-self: $a-self;
+  justify-content: $justify-c;
+  flex-wrap: $f-wrap;
 }
 
 @mixin size($w: null, $h: null) {

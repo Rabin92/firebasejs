@@ -9,8 +9,8 @@
   }
 
   @media #{$break-m} {
-    flex-direction: row;
-    justify-content: space-between;
+    @include flexy($dsp: null, $fdir: row, $justify-c: space-between);
+
     h2 {
       font-size: 1.5em;
     }

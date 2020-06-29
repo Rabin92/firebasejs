@@ -584,6 +584,7 @@ section h2 {
 @media (min-width: 64em) {
   .container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
   .container .col {

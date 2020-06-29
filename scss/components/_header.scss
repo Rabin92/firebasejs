@@ -23,7 +23,7 @@
 
 .header-sec {
   @media #{$break-m} {
-    flex-direction: row;
+    @include flexy($dsp: null, $fdir: row);
     h2 {
       font-size: 3em;
 
@@ -37,7 +37,7 @@
       text-align: initial;
     }
     .firebase-intro {
-      align-self: center;
+      @include flexy($dsp: null, $a-self: center);
     }
 
     .firebase-sec {

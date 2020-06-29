@@ -50,9 +50,7 @@ section {
 
 .container {
   @media #{$break-l} {
-    display: flex;
-
-    flex-wrap: wrap;
+    @include flexy($fdir: row, $f-wrap: wrap);
 
     .col {
       flex-basis: 33.333%;
