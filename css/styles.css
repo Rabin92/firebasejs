@@ -372,12 +372,16 @@ p {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   color: #51575b;
 }
 
 .wrapper {
+  flex: 1;
   width: 90%;
   margin: 0 auto;
 }

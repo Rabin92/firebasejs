@@ -5,6 +5,10 @@
 }
 
 body {
+  @include flexy($fdir: column);
+  min-height: 100vh;
+  // sticky footer
+
   font-family: "Roboto", sans-serif;
   font-size: 1em;
 
@@ -12,6 +16,7 @@ body {
 }
 
 .wrapper {
+  flex: 1;
   @include center();
   @media #{$break-l} {
     max-width: 1140px;
