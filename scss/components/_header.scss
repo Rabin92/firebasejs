@@ -45,3 +45,28 @@
     }
   }
 }
+
+// Keyframes
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-it {
+  100% {
+    fill: gold;
+  }
+}
+
+svg {
+  .star {
+    stroke: currentColor;
+    stroke-width: 30;
+    stroke-dasharray: 1830;
+    stroke-dashoffset: 1830;
+
+    animation: offset 5s ease-out forwards, fill-it 0.8s 5s forwards;
+  }
+}

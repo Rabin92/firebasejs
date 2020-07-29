@@ -36,7 +36,7 @@
   display: inline-block;
 
   &-icon {
-    @include size($w: 15px, $h: 15px);
+    @include size($h: 15px);
 
     color: $star-icon-color;
   }
